@@ -43,7 +43,7 @@ export default function Header() {
       >
         <Show
           when={iconTitle().icon}
-          fallback={<div class="w-8em h-8em" innerHTML={logo} />}
+          fallback={<div class="w-2em h-2em"/>}
         >
           <div class="text-7em h-1em mb-8">{iconTitle().icon}</div>
         </Show>
@@ -60,29 +60,11 @@ export default function Header() {
             fallback={
               <>
                 <span class="text-transparent font-extrabold bg-clip-text bg-gradient-to-r dark:from-yellow-300 from-yellow-600 dark:to-red-700 to-red-700 mr-1">
-                  ChatGPT
+                  SuiWen
                 </span>
                 <span class="ml-1 font-extrabold text-slate-7 dark:text-slate">
-                  Vercel
+                  AI
                 </span>
-                <a
-                  class="ml-2 <sm:hidden"
-                  href="https://github.com/ourongxing/chatgpt-vercel"
-                >
-                  <img
-                    alt="GitHub forks badge"
-                    src="https://img.shields.io/github/stars/ourongxing/chatgpt-vercel?logo=github"
-                  />
-                </a>
-                <a
-                  class="ml-2"
-                  href="https://github.com/ourongxing/chatgpt-vercel/fork"
-                >
-                  <img
-                    alt="GitHub forks badge"
-                    src="https://img.shields.io/github/forks/ourongxing/chatgpt-vercel?logo=github"
-                  />
-                </a>
               </>
             }
           >
